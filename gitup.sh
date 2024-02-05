@@ -2,7 +2,9 @@
 
 sudo git add *
 git commit -m "$1"
-if [ $? -gt 0 ]; then
+
+if [ $? -gt 0 ];
+then
 	echo "nothing to commit"
 else
 	git push
