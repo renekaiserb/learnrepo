@@ -1,6 +1,6 @@
 #! /bin/bash
 
-git add *
+sudo git add *
 git commit -m "$1"
 if [ $? -gt 0 ]; then
 	echo "nothing to commit"
