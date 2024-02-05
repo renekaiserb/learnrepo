@@ -6,5 +6,5 @@ if [ $? -gt 0 ]; then
 	echo "nothing to commit"
 else
 	git push
-	echo "$USER commited $(pwd) at $(date)"
+	echo "$USER pushed $(pwd) at $(date)"
 fi
