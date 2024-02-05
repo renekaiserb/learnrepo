@@ -1,7 +1,11 @@
 #! /bin/bash
 
-git add *
-git commit -m "$1"
-git push
-echo ("aaand its on github :)")
+if [ ! -z "$1" ]; then
+	git add *
+	git commit -m "$1"
+	git push
+	echo "$USER commited $(pwd) at $(date)"
+else
+	echo "commit comment misssing"
+fi
 
