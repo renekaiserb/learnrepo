@@ -10,3 +10,5 @@ else
 	git push
 	echo "$USER pushed $(pwd) at $(date)"
 fi
+
+#recreated after move
