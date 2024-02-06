@@ -1,7 +1,6 @@
 #! /bin/bash
 
-sudo git add *
-git commit -m "$1"
+git commit -am "$1"
 
 if [ $? -gt 0 ];
 then
